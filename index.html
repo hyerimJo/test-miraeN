@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes,target-densitydpi=medium-dpi">
+        <meta property="og:image" content="img/common/img.jpg" />
+        <title>미래엔 과제-조혜림</title>
+        <link rel="icon" href="img/common/favicon.ico">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/Pretendard/dist/web/static/pretendard.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/S-CoreDream/S-CoreDream.css" type="text/css"/>
+
+        <script src="//code.jquery.com/jquery-latest.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/aos.js"></script>
+
+        <script type="text/javascript">
+            if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+                window.location = 'microsoft-edge:' + window.location;
+                setTimeout(function () {
+                    window.location = 'https://go.microsoft.com/fwlink/%linkid=2135547';
+                }, 1);
+            }
+
+            function updateOrientation() {
+                var orientationValue = window.orientation
+                if (orientationValue == 90 || orientationValue == -90) {
+                    $("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes,target-densitydpi=medium-dpi");
+                }
+            }
+
+            window.onload = function () {
+                document.body.onorientationchange = updateOrientation;
+            }
+
+            var windowWidth = window.screen.width
+            setViewPort(windowWidth);
+            function setViewPort(w_width) {
+                if (w_width <= 440) {
+                    $("meta[name=viewport]").attr("content", "width=440, maximum-scale=2.0, user-scalable=yes, target-densitydpi=medium-dpi");
+                } else {
+                    $("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes,target-densitydpi=medium-dpi");
+                }
+            }
+
+            window.addEventListener('resize', function (event) {
+                windowWidth = window.screen.width
+                setViewPort(windowWidth);
+            }, true);
+
+            // vh
+            function setScreenSize() {
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            }
+            setScreenSize();
+            window.addEventListener("resize", () => setScreenSize());
+        </script>
+    </head>
+    <body>
+        <article class="top-banner">
+            <a href="">
+                <img src="images/early_link.png" alt="선착순 초코 회원이라면 누구나 무료! 지금 신청" class="text">
+                <img src="images/ico_link_arrow.svg" alt="" class="svg view-arrow">
+            </a>
+        </article>
+        
+        <article class="side-nav">
+            <figure>
+                <img src="images/side_char_pin.png" alt="" class="pin">
+                <img src="images/side_char.png" alt="캐릭터">
+            </figure>
+            <ul>
+                <li><a href="#apply">계기교육 안내</a></li>
+                <li><a href="#history">초코타임미리보기</a></li>
+                <li><a href="#subject">커리큘럼과목 <img src="images/ico_nav01.png" alt=""></a></li>
+                <li><a href="#live">신청하기<img src="images/ico_nav02.png" alt=""></a></li>
+            </ul>
+            
+            <button type="button" id="top-btn"><img src="images/ico_top.png" alt="위로가기 버튼"></button>
+        </article>
+
+        <div class="key-visual__wrap">
+            <div class="key-visual">
+                <div class="key-visual__header">
+                    <figure><img src="images/choco_logo.png" alt=""></figure>
+                    <div>
+                        <button type="button" class="login-btn">로그인</button>
+                        <a href=""><img src="images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="key-visual__content">
+                    <article class="key-visual__image">
+                        <img src="images/visual_char.gif" alt="6/17(수) 단 하루! 6월을 이해하는 가장 쉬운 방법 바로 초코타임">
+                    </article>
+
+                    <article class="key-visual__text">
+                        <div data-aos="fade-up">
+                            <div class="title">
+                                <img src="images/paper_char.png" alt="선착순">
+                                <p><em>마감 전, 빠르게</em> 초코타임 신청하러 가자</p>
+                                <button type="button" class="click-btn">
+                                    <img src="images/go_txt.png" class="btn-text" alt="gogo">
+                                    <img src="images/ico_link_arrow.svg" alt="링크이동" class="svg view-arrow">
+                                </button>
+                            </div>
+                            <div class="text-box">
+                                <div>
+                                    <dl>
+                                        <dt>수업 내용</dt>
+                                        <dd>아이의 생각을 바꾸는 <br>30분의 역사 경험</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>참여 선물</dt>
+                                        <dd>초간단 댓글&후기 쓰고 <br>특별한 선물 받자♥</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>참여 방법</dt>
+                                        <dd>한국사·입시 전문 쌤과 <br>ZOOM에서 실시간으로 만나요!</dd>
+                                    </dl>
+                                </div>
+                                <p>※ 신청자는 수업 10분 전부터 ‘나의 초코타임 ▶ 수업 들어가기’ 클릭 시, 참여 가능</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__wrap apply__wrap" id="apply">
+            <div class="content apply">
+                <section class="apply__title">
+                    <article class="apply__header" data-aos="fade-up" data-aos-delay="200">
+                        <span>
+                            6월 공휴일
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                                <path d="M5.22158 7.40305L0 0H15L10.1789 7.32347C9.01625 9.08959 6.44032 9.13094 5.22158 7.40305Z" fill="#579A55"/>
+                            </svg>
+                        </span>
+                        <p class="title">“ 아이는 <em>왜 쉬는 날인지</em> 알고 있을까요 ”</p>
+                        <p class="text">현충일, 6·25… 이름은 익숙하지만 의미는 낯선 아이들</p>
+                    </article>
+
+                    <article class="apply__image">
+                        <figure data-aos="fade-in">
+                            <img src="images/apply_content.svg" class="svg" alt="뉴스스크랩">
+                        </figure>
+                    </article>
+                </section>
+
+                <section class="apply__form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="form__wrap">
+                        <figure class="top-char"><img src="images/apply_char.png" alt=""></figure>
+                        <form action="">
+                            <dl class="apply__form-tech">
+                                <dt>주로 사용하는 퍼블리싱 기술/환경을 선택해 주세요. (복수 선택 가능)</dt>
+                                <dd>
+                                    <p>
+                                        <input type="checkbox" id="chk-01" name="apply_tech" checked>
+                                        <label for="chk-01">HTML5</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-02" name="apply_tech">
+                                        <label for="chk-02">CSS3</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-03" name="apply_tech">
+                                        <label for="chk-03">JavaScript</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-04" name="apply_tech">
+                                        <label for="chk-04">jQuery</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-05" name="apply_tech">
+                                        <label for="chk-05">React</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-06" name="apply_tech">
+                                        <label for="chk-06">Vue</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-07" name="apply_tech">
+                                        <label for="chk-07">Figma</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="chk-08" name="apply_tech">
+                                        <label for="chk-08">Photoshop</label>
+                                    </p>
+                                </dd>
+                            </dl>
+
+                            <dl class="apply__form-most">
+                                <dt>가장 자신 있는 퍼블리싱 영역은 무엇인가요?</dt>
+                                <dd>
+                                    <p>
+                                        <input type="radio" id="radio-01" name="apply_most">
+                                        <label for="radio-01">반응형 웹</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="radio-02" name="apply_most">
+                                        <label for="radio-02">프로모션/이벤트 페이지</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="radio-03" name="apply_most" checked>
+                                        <label for="radio-03">UI 컴포넌트/디자인 시스템</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="radio-04" name="apply_most">
+                                        <label for="radio-04">CSS 애니메이션/인터랙션</label>
+                                    </p>
+                                </dd>
+                            </dl>
+
+                            <dl class="apply__form-web">
+                                <dt>
+                                    포트폴리오 또는 대표 작업물 URL을 작성해 주세요.
+                                    <span>퍼블리싱한 웹사이트 주소를 작성해주세요.</span>
+                                </dt>
+                                <dd>
+                                    <input type="text" placeholder="Ex. 중학 국어 2-1(신유식)">
+                                </dd>
+                            </dl>
+
+                            <dl class="apply__form-appeal">
+                                <dt>
+                                    이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요.
+                                    <p>마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.</p>
+                                </dt>
+                                <dd>
+                                    <textarea name="" id="textBox" maxLength={2000}></textarea>
+                                    <div class="text__wrap">
+                                        <p class="text-count">0</p>
+                                        <p class="text-total">/2,000</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </form>
+                    </div>
+                    <button type="button" class="click-btn">
+                        지원하기
+                    </button>
+                </section>
+            </div>
+        </div>
+
+        <div class="content__wrap history__wrap" id="history">
+            <div class="content history">
+                <section class="history__title">
+                    <figure data-aos="fade-up"><img src="images/history_top_img.png" alt=""></figure>
+                    <p class="title" data-aos="fade-up" data-aos-delay="200">
+                        외우는 역사가 아니라 <span data-text="이해하는 역사로!"><em>이해하는</em> 역사로!</span>
+                        <img src="images/history_star.png" alt="">
+                    </p>
+                    <p class="text" data-aos="fade-up" data-aos-delay="400">
+                        한국사 전문가 연희쌤과 ZOOM으로 함께하는 <br>
+                        초등 맞춤형 라이브 수업을 체험해 보세요!
+                        <img src="images/history_icon.png" alt="">
+                    </p>
+                </section>
+
+                <section class="history__content">
+                    <figure class="clip"><img src="images/history_clip.png" alt=""></figure>
+
+                    <article class="history__video" data-aos="fade-in">
+                        <video poster="images/history_video.png" muted playsinline>
+                            <source src="video/history_video.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="history__btn"><img src="images/history_btn.png" alt=""></button>
+                    </article>
+
+                    <article class="history__info" data-aos="fade-up">
+                        <ul>
+                            <li>초등 사회 전문 선생님&친구들과 함께하는 ‘무료’ LIVE 수업</li>
+                            <li>외우지 않아도 이해되는, 아이 눈높이 역사 수업</li>
+                            <li>6월의 의미를 배우고, 스스로 생각하는 힘이 자라는 시간</li>
+                        </ul>
+
+                        <figure><img src="images/history_char.png" alt=""></figure>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <div class="content__wrap subject__wrap" id="subject">
+            <div class="content subject">
+                <section class="subject__title">
+                    <figure data-aos="fade-up"><img src="images/subject_logo.png" alt="초코 로고"></figure>
+                    <p class="title" data-aos="fade-up" data-aos-delay="200"> 여름방학 과목별 학습 한 눈에 보기 </p>
+                </section>
+
+                <section class="subject__content" data-aos="fade-up">
+                    <figure class="subject__pin"><img src="images/subject_pin.png" alt=""></figure>
+
+                    <div class="swiper__wrap">
+                        <div thumbsSlider="" class="swiper title-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/subject_title01.png" class="off" alt="국어">
+                                    <img src="images/subject_title01-on.png" class="on" alt="국어">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/subject_title02.png" class="off" alt="수학">
+                                    <img src="images/subject_title02-on.png" class="on" alt="수학">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/subject_title03.png" class="off" alt="사회">
+                                    <img src="images/subject_title03-on.png" class="on" alt="사회">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/subject_title04.png" class="off" alt="과학">
+                                    <img src="images/subject_title04-on.png" class="on" alt="과학">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper content-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide01">
+                                    <p class="title">“교과서 작품과 어휘를 통해 <em>읽기 자신감</em>을 키워요.”</p>
+                                    <div class="slide-content">
+                                        <p class="content-title">미리 보는 교과서 작품</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure><img src="images/subject_img01-1.png" alt=""></figure>
+                                                <p class="item-title">교과서 작품 애니메이션</p>
+                                                <p class="item-text">
+                                                    작품 애니메이션과 레몬 영상으로 <br>
+                                                    2학기 교과서 수록 이야기를 감상해요.
+                                                </p>
+                                                <figure class="arrow"><img src="images/subject_arrow.png" alt=""></figure>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure><img src="images/subject_img01-2.png" alt=""></figure>
+                                                <p class="item-title">확인 퀴즈</p>
+                                                <p class="item-text">
+                                                    확인 퀴즈로 이야기의 줄거리와 <br>
+                                                    주요 장면을 이해해요.
+                                                </p>
+                                                <figure class="arrow"><img src="images/subject_arrow.png" alt=""></figure>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure><img src="images/subject_img01-3.png" alt=""></figure>
+                                                <p class="item-title">감상 카드</p>
+                                                <p class="item-text">
+                                                    작품별로 꼭 알아야 하는 내용을 <br>
+                                                    감상카드로 정리해요. <br>
+                                                    <em>*감상카드는 1~4학년에 제공됩니다.</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <p class="content-title">미리 익히는 교과서 어휘</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img01-4.png" alt="">
+                                                    <img src="images/subject_img01-5.png" alt="">
+                                                </figure>
+                                                <p class="item-text">
+                                                    단원별 핵심 어휘를 블록 게임으로 재미있게 익혀요. <br>
+                                                    낱말 뜻과 교과서 속 예시 문장을 읽고, 알맞은 낱말을 찾으며 <br>
+                                                    어휘력과 문장 이해력을 함께 키워요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide02">
+                                    <p class="title">“원리 이해를 통해 <em>연산 실력</em>부터 <em>문제 해결력</em>까지 완성해요!”</p>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초 1~2] 별별★수학</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img02-1.png" alt="">
+                                                    <img src="images/subject_img02-2.png" alt="">
+                                                    <img src="images/subject_img02-3.png" alt="">
+                                                </figure>
+                                                <p class="item-text">
+                                                    게임과 애니메이션으로 연산 원리를 쉽고 재미있게 이해해요. <br>
+                                                    반복 연산 훈련으로 수 감각과 기초 계산력을 키워요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초 3~6] 문해길 수학 점프 업</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img02-4.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    이해하기
+                                                </p>
+                                                <p class="item-text">
+                                                    문제에서 구하려는 것과 <br>
+                                                    주어진 조건을 찾아내는 연습을 하며<br>
+                                                    수학적 사고력을 길러요.
+                                                </p>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img02-5.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    확인하기/실력쌓기
+                                                </p>
+                                                <p class="item-text">
+                                                    단계별 풀이 과정에 따라 <br>
+                                                    정확하게 문제를 해결하는 <br>
+                                                    방법을 익혀요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide03">
+                                    <p class="title">“사회 현상과 개념, 용어를 연결하며 <em>개념 이해력</em>을 키워요!”</p>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초1~2] 독해로 보는 사회</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img03-1.png" alt="">
+                                                    <img src="images/subject_img03-2.png" alt="">
+                                                </figure>
+                                                <p class="item-text">
+                                                    통합교과 주제와 연계된 글을 자료와 함께 읽으며 <br>
+                                                    배경지식을 쑥쑥 확장해요. <br>
+                                                    <em>1-2 하루, 약속, 상상, 이야기 / 2-2 계절, 인물, 물건, 기억</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초3~6] 개념 스펀지 / 사회 용어 미리보기</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img03-3.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    개념 스펀지
+                                                </p>
+                                                <p class="item-text">
+                                                    “왜 그럴까?” 질문으로 시작해 <br>
+                                                    2학기에 배울 사회 개념을 <br>
+                                                    쉽고 재미있게 이해해요!
+                                                </p>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img03-4.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    사회 용어 미리보기
+                                                </p>
+                                                <p class="item-text">
+                                                    2학기 사회 교과서에 나오는 <br>
+                                                    사회 용어를 미리 익혀요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide04">
+                                    <p class="title">“과학 용어와 원리를 이해하며 <em>탐구력</em>을 키워요.”</p>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초 1] 오늘은 내가 실험왕 / [초 2] 5분 탐구생활</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img04-1.png" alt="">
+                                                </figure>
+                                                <p class="item-title">오늘은 내가 실험왕</p>
+                                                <p class="item-text">
+                                                    일상생활에서 마주치는 과학적 호기심을 <br>
+                                                    과학적 원리로 해결해요.
+                                                </p>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img04-2.png" alt="">
+                                                </figure>
+                                                <p class="item-title">5분 탐구생활</p>
+                                                <p class="item-text">
+                                                    대표 과학 탐구 주제로 <br>
+                                                    과학의 궁금증을 해결해요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <p class="content-title">[초 3~6] 개념 용어 PLAY! 과학 용어 미리 보기 / [초5~6] 3분 특강</p>
+                                        <div class="content-item">
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img04-3.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    개념 용어 PLAY!
+                                                </p>
+                                                <p class="item-text">
+                                                    물리학·화학·생명과학·지구과학 <br>
+                                                    핵심 용어를 영상 속 고구마머리와 <br>
+                                                    쉽고 재미있게 배워요.
+                                                </p>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img04-4.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    과학 용어 미리 보기
+                                                </p>
+                                                <p class="item-text">
+                                                    2학기 과학 교과서에 나오는 <br>
+                                                    과학 용어를 미리 익혀요.
+                                                </p>
+                                            </div>
+                                            <div class="item-box">
+                                                <figure>
+                                                    <img src="images/subject_img04-5.png" alt="">
+                                                </figure>
+                                                <p class="item-title">
+                                                    3분 특강
+                                                </p>
+                                                <p class="item-text">
+                                                    꼭 알아야 하는 과학 원리를 <br>
+                                                    개념 키워드로 3분 안에 정리해요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="content__wrap live__wrap" id="live">
+            <div class="content live">
+                <header>
+                    <h2>콘텐츠 타이틀</h2>
+                    <h4>콘텐츠 서브 타이틀</h4>
+                </header>
+                <section>
+                    <article>
+                        <div class="image"></div>
+                        <div class="texts">
+                            <h3>아티클 타이틀</h3>
+                            <h4>아티클 섭타이틀</h4>
+                            <p>두줄이상의 내용</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
