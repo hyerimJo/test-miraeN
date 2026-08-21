@@ -6,6 +6,12 @@
     100%{ opacity: 0; }
 }
 
+@keyframes fadeIn2 {
+    0%{ opacity: 0.3; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0.3; }
+}
+
 @keyframes moveUpDown {
     0%{ transform:translateY(-10px) }
     50%{ transform:translateY(0px) }
@@ -21,4 +27,9 @@
 @keyframes moveRotate2 {
     0%{ transform:rotate(-5deg) }
     100%{ transform:rotate(10deg) }
+}
+
+@keyframes moveRotate3 {
+    0%{ transform:rotate(-5deg) }
+    100%{ transform:rotate(0deg) }
 }
