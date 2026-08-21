@@ -1,9 +1,7 @@
 $(document).ready(function(){
 	//aos
 	AOS.init({
-		duration: 1200,
-		once:true,
-		delay:200,
+		duration: 800,
 	});
     
     // img to svg
@@ -61,6 +59,11 @@ $(document).ready(function(){
 
         listBox.each(function(index){
             var listBoxTop = $(this).offset().top;
+
+			if (index === 0 && scrollTop < listBoxTop - 100) {
+				tabTitle.removeClass("is-active");
+				return false;
+			}
 
             if(scrollTop >= listBoxTop - 100) {
                 tabTitle.removeClass("is-active");
