@@ -499,6 +499,10 @@
     color: #C3C3C3;
 }
 
+.apply__wrap .apply__form .apply__form-tech br{
+    display:none;
+}
+
 .apply__wrap .apply__form .apply__form-most dd input[type="radio"]:checked + label:before{
     background: url(/images/ico_check.png) no-repeat 50% 50% #02A39F;
     border:1px solid #02A39F;
