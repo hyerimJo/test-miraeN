@@ -167,7 +167,7 @@
 
 .key-visual__content{
     position: relative;
-    background: url(/images/visual_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/visual_bg.png) no-repeat 50% 50% / cover;
     min-height:992px;
 }
 
@@ -184,7 +184,7 @@
     transform: translateX(-50%);
     bottom: 30px;
     left:45%;
-    background: url(/images/visual_char_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/visual_char_bg.png) no-repeat 50% 50% / cover;
 }
 
 .key-visual__content .key-visual__text{
@@ -247,7 +247,7 @@
     padding-top: 46px;
     padding-left: 75px;
     text-align: center; 
-    background: url(/images/paper.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/paper.png) no-repeat 50% 50% / cover;
     height: 236px;
     margin-top: -35px;
     position: relative;
@@ -504,7 +504,7 @@
 }
 
 .apply__wrap .apply__form .apply__form-most dd input[type="radio"]:checked + label:before{
-    background: url(/images/ico_check.png) no-repeat 50% 50% #02A39F;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/ico_check.png) no-repeat 50% 50% #02A39F;
     border:1px solid #02A39F;
 }
 
@@ -571,7 +571,7 @@
     bottom: 0;
     width: 100%;
     height: 25px;
-    background: url(/images/history_line.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/history_line.png) no-repeat 50% 50% / cover;
     content:'';
     z-index: -2;
     clip-path: inset(0 100% 0 0);
@@ -620,7 +620,7 @@
     position: relative;
     width: 100%;
     height: 940px;
-    background: url(/images/history_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/history_bg.png) no-repeat 50% 50% / cover;
     padding: 85px 50px;
 }
 
@@ -689,7 +689,7 @@
     display:block;
     width: 24px;
     height: 24px;
-    background: url(/images/history_dot.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/history_dot.png) no-repeat 50% 50% / cover;
     margin-right: 10px;
     content:'';
 }
@@ -703,7 +703,7 @@
 
 .subject__wrap{
     padding: 100px 0 140px;
-    background: url(/images/subject_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/subject_bg.png) no-repeat 50% 50% / cover;
 }
 
 .subject__wrap .subject__title{
@@ -791,7 +791,7 @@
     left: 50%;
     width: 893px;
     height: 76px;
-    background: url(/images/subject_text_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/subject_text_bg.png) no-repeat 50% 50% / cover;
     color: #5A371E;
     font-family: var(--sc);
     font-size: var(--font28);
@@ -855,7 +855,7 @@
     display:block;
     width: 14px;
     height: 19px;
-    background: url(/images/subject_title_star.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/subject_title_star.png) no-repeat 50% 50% / cover;
     content:'';
 }
 
@@ -913,14 +913,14 @@
 .subject__wrap .subject__content .swiper__wrap .content-swiper .swiper-button-prev{
     width: 70px;
     height: 70px;
-    background: url(/images/subject_arrow_left.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/subject_arrow_left.png) no-repeat 50% 50% / cover;
     left: -9%;
 }
 
 .subject__wrap .subject__content .swiper__wrap .content-swiper .swiper-button-next{
     width: 70px;
     height: 70px;
-    background: url(/images/subject_arrow_right.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/subject_arrow_right.png) no-repeat 50% 50% / cover;
     right: -9%;
 }
 
@@ -931,7 +931,7 @@
 
 /*live*/
 .live__wrap{
-    background: url(/images/live_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/live_bg.png) no-repeat 50% 50% / cover;
     padding: 120px 0 195px;
     text-align: center;
 }
@@ -951,7 +951,7 @@
     width: 382px;
     height: 95px;
     margin: 0 auto;
-    background: url(/images/live_title_bg.png) no-repeat 50% 50% / cover;
+    background: url(https://hyerimjo.github.io/test-miraeN/images/live_title_bg.png) no-repeat 50% 50% / cover;
     padding-bottom: 15px;
 }
 
@@ -1023,7 +1023,7 @@
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.8px;
-    cursor: url(/images/live_cursor.png) 35 35, auto !important;
+    cursor: url(https://hyerimjo.github.io/test-miraeN/images/live_cursor.png) 35 35, auto !important;
 }
 
 .live__wrap .live__content .click-btn:hover{
