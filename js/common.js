@@ -101,6 +101,10 @@ $(document).ready(function(){
 		}
 	});
 
+	historyVideo.addEventListener('play', () => {
+		historyVideo.controls = true;
+	}, { once: true });
+
 	// subject swiper
 	var swiper = new Swiper('.title-swiper', {
 		slidesPerView: "auto",
